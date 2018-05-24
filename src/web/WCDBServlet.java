@@ -27,7 +27,7 @@ public class WCDBServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setAttribute("kaiinnNo", 1);
+		request.setAttribute("kaiinnNo", Integer.toString(1));
 		request.setAttribute("kaiinnName", "中村");
 		request.setAttribute("registDate", "2018/05/24");
 
