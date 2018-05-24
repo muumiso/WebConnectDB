@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<jsp:useBean id="kaiinnNo" class="java.lang.Integer" scope="request" />
+<jsp:useBean id="kaiinnName" class="java.lang.String" scope="request" />
+<jsp:useBean id="registDate" class="java.lang.String" scope="request" />
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -8,9 +11,9 @@
 </head>
 <body>
 検索結果 <br>
-ID : 1 <br>
-名前：中村 <br>
-登録日：2018/5/24
+ID : <%=kaiinnNo %> <br>
+名前：<%=kaiinnName %> <br>
+登録日：<%=registDate %>
 
 </body>
 </html>
